@@ -19,6 +19,9 @@
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
+  <!--Custom style for social media icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- Custom styles for this template -->
 
   <link href="./css/style.css" rel="stylesheet">
@@ -60,6 +63,11 @@
               <h3>Contact</h3>
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#learn">
+              <h3>Learning</h3>
+            </a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#projects" id="navbarDropdown" role="button"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -83,6 +91,7 @@
 
     <div class="jumbotron" style="background-image: url(./images/jumbo-banner.png);">
 
+
       <div class="container">
         <img src="./images/profile-picture.jpg" class="img-thumbnail" alt="Profile picture of Jenelle">
         <h3 class="mb-4">Hi There, I'm Jenelle</h3>
@@ -94,13 +103,34 @@
     </div>
 
     </div>
+
     </header>
 
     <!-- Work -->
+    <section class="p-5" id="learn">
+      <h2>Learning (Skills that will be covered in Bootcamp)</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Using VScode Git and GitHub</li>
+        <li class="list-group-item">Apply fundamental knowledge of web development with HTML, CSS, and JavaScript.</li>
+        <li class="list-group-item">Create visually-compelling page layouts using UX design principles</li>
+        <li class="list-group-item">Manipulate page information and create interactivity using jQuery and React.</li>
+        <li class="list-group-item">Retrieve data from servers using RESTful-compliant network requests.</li>
+        <li class="list-group-item">Organise code, having mastered foundations of object-oriented and functional
+          programming paradigms.</li>
+        <li class="list-group-item">Build modern web applications with industry-standard frameworks like Node.js and
+          React.</li>
+        <li class="list-group-item">Deploy web-based applications using Netlify.</li>
+        <li class="list-group-item">Prepare a portfolio of front-end development work.</li>
+        <li class="list-group-item">Understanding the bounds of reasonable and achievable.</li>
+      </ul>
+
+
+    </section>
 
     <section class="p-5" id="work">
       <h2>Projects</h2>
-      <p>Here are some examples of work that I have completed as part of the Front End Web Development Bootcamp. </p>
+      <p>Here are some examples of work, that I have completed, using the skills I have learnt while registered for the
+        Front End Web Development Bootcamp. </p>
       <div class="row row-cols-1 row-cols-md-2 g-4">
 
 
@@ -109,8 +139,7 @@
             <img src="./images/refactor-project.png" class="card-img-top" alt="Photo of digital marketing meeting">
             <div class="card-body">
               <h5 class="card-title" id="refactor">Refactor Project</h5>
-              <p class="card-text">This project was done using semantic HTML tags and atl tags to make the webpage
-                asccessible to all users.</p>
+              <p class="card-text">This project uses semantic HTML tags and alt attributes.</p>
               <a href="https://jenieb3.github.io/assessibility-able/" class="btn btn-dark">Read More</a>
             </div>
           </div>
@@ -122,8 +151,8 @@
             <img src="./images/javascript-placeholder.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title" id="javascript">JavaScript</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
+              <p class="card-text"> Introduction to JavaScript functions and loops.
+              </p>
               <a href="#" class="btn btn-dark">Read More</a>
             </div>
           </div>
@@ -134,8 +163,8 @@
             <img src="./images/jquery-placeholder.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title" id="jquery">jQuery</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
+              <p class="card-text">Project using jQuery to build a Website.
+              </p>
               <a href="#" class="btn btn-dark">Read More</a>
             </div>
           </div>
@@ -144,9 +173,9 @@
           <div class="card" style="width: 18rem;">
             <img src="./images/react-project.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title" id="react">React</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
+              <h5 class="card-title" id="react">ReactJS</h5>
+              <p class="card-text">This project is a good example on a user interface webdesign.
+              </p>
               <a href="#" class="btn btn-dark">Read More</a>
             </div>
           </div>
@@ -158,22 +187,55 @@
 
     </section>
 
-    <!-- About me -->
-    <section class="about me" id="about">
-
+    <!-- About me and Contact in the same row-->
+    <section class="p-5">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title" id="about">About me</h4>
+              <p class="card-text">I am a lover of life and learning. I do enjoy a good challenge that provokes
+                analytical thinking and problem solving. Also, I like interacting with nature as I draw inspiration,
+                from the wonderful world around us.</p>
+              <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title" id="contact">Contact</h4>
+              <p class="card-text">Tele: 333 555 777 <br> email: jenieb3@spiodesigns.com <br> P.O. Box 456783</p>
+              <a href="#" class="btn btn-dark">Message Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Learning -->
-    <section class="contact" id="contact">
-    </section>
-
-    <!-- Contact-->
+    <!-- Learning-->
     <section class="Learning">
+
     </section>
+    <hr class="new4">
 
     <footer>
-      <div class="container">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <h5>Last updated 12/22</h5>
+          </div>
+          <div class="col">
+            <a href="#" class="fa fa-facebook"></a>
+          </div>
+          <div class="col">
+            <a href="#" class="fa fa-twitter"></a>
+          </div>
+        </div>
       </div>
+
+
+
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
