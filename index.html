@@ -29,7 +29,7 @@
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
-      height: 400px;
+      size-adjust: 40%;
     }
   </style>
 </head>
@@ -38,7 +38,9 @@
   <!--Navbar-->
   <nav class="customNav">
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div class="container"><a class="navbar-brand" href="#">JSG</a>
+      <div class="container"><a class="navbar-brand" href="#">
+          <h2>JSG</h2>
+        </a>
 
       </div>
 
@@ -49,24 +51,28 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#about">
+              <h3>About</h3> <span class="sr-only">(current)</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">
+              <h3>Contact</h3>
+            </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Projects
+            <a class="nav-link dropdown-toggle" href="#projects" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <h3>Projects</h3>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Refactor Project</a>
+              <a class="dropdown-item" href="#refactor">Refactor Project</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Portfolio 1</a>
+              <a class="dropdown-item" href="#javascript">JavaScript</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Portfolio 2</a>
+              <a class="dropdown-item" href="#jquery">jQuery</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Portfolio 3</a>
+              <a class="dropdown-item" href="#react">React</a>
             </div>
           </li>
         </ul>
@@ -75,10 +81,13 @@
 
     </nav>
 
-    <div class="jumbotron" style="background-image: url(./images/hero-banner.png);">
+    <div class="jumbotron" style="background-image: url(./images/jumbo-banner.png);">
 
       <div class="container">
-
+        <img src="./images/profile-picture.jpg" class="img-thumbnail" alt="Profile picture of Jenelle">
+        <h3 class="mb-4">Hi There, I'm Jenelle</h3>
+        <p class="mb-4">"Everything is designed. Few things are designed well." -- Brian Reed</p>
+        <button type="button" class="btn btn-outline-dark">Follow!</button>
 
 
       </div>
@@ -87,66 +96,80 @@
     </div>
     </header>
 
-    <!-- Download Section -->
-    <section class="download" id="download">
+    <!-- Work -->
+
+    <section class="p-5" id="work">
+      <h2>Projects</h2>
+      <p>Here are some examples of work that I have completed as part of the Front End Web Development Bootcamp. </p>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./images/refactor-project.png" class="card-img-top" alt="Photo of digital marketing meeting">
+            <div class="card-body">
+              <h5 class="card-title" id="refactor">Refactor Project</h5>
+              <p class="card-text">This project was done using semantic HTML tags and atl tags to make the webpage
+                asccessible to all users.</p>
+              <a href="https://jenieb3.github.io/assessibility-able/" class="btn btn-dark">Read More</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./images/javascript-placeholder.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="javascript">JavaScript</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./images/jquery-placeholder.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="jquery">jQuery</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./images/react-project.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="react">React</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      </div>
 
     </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials ">
+    <!-- About me -->
+    <section class="about me" id="about">
+
     </section>
 
-    <!-- Call to Action -->
-    <section class="signup-section" id="signup">
+    <!-- Learning -->
+    <section class="contact" id="contact">
     </section>
 
     <!-- Contact-->
-    <section class="contact-section bg-black">
+    <section class="Learning">
     </section>
-
-
-
-
-  </nav>
-  <!-- Hero Section -->
-  <header class="masthead">
-  </header>
-
-  <!-- Download Section -->
-  <section class="download" id="download">
-
-  </section>
-
-  <!-- Testimonials -->
-  <section class="testimonials ">
-  </section>
-
-  <!-- Call to Action -->
-  <section class="signup-section" id="signup">
-  </section>
-
-  <!-- Contact-->
-  <section class="contact-section bg-black">
-  </section>
-
-  <footer>
-    <div class="container">
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <footer>
       <div class="container">
